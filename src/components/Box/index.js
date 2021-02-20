@@ -16,6 +16,13 @@ const Box = () => {
     setChecked(e.target.checked);
   }
 
+  let covered;
+  let notCovered;
+  const testColor = (x) => {
+    covered = (x/4) * 100;
+    notCovered = 100 - covered;
+  }
+
   return (
     <div className="box">
       <div className="top">
